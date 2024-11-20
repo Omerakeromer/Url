@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShortURL - عمر أبو عكر</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع قصر الروابط - عمر أبو عكر</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>ShortURL - عمر أبو عكر</h1>
-    <form id="shorten-form">
-      <input type="text" id="long-url" placeholder="أدخل الرابط الطويل" required>
-      <button type="submit">اختصر الرابط</button>
-    </form>
-    <div id="result" class="hidden">
-      <p>رابطك المختصر:</p>
-      <a id="short-url" href="#" target="_blank"></a>
-      <button id="copy-btn">نسخ</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <header>
+        <h1>💡 قصر الروابط - عمر أبو عكر 💡</h1>
+    </header>
+    <main>
+        <section class="shortener">
+            <h2>أدخل الرابط الطويل لتقصيره:</h2>
+            <input type="url" id="longUrl" placeholder="https://example.com" required>
+            <button id="shortenBtn">قصّر الرابط</button>
+            <p id="shortenedUrl"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 عمر أبو عكر</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
