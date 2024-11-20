@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShortURL - عمر أبو عكر</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ShortURL - عمر أبو عكر</h1>
+    <form id="shorten-form">
+      <input type="text" id="long-url" placeholder="أدخل الرابط الطويل" required>
+      <button type="submit">اختصر الرابط</button>
+    </form>
+    <div id="result" class="hidden">
+      <p>رابطك المختصر:</p>
+      <a id="short-url" href="#" target="_blank"></a>
+      <button id="copy-btn">نسخ</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
